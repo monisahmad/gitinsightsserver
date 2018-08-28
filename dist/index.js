@@ -32,5 +32,5 @@ app.get('/connect/:code', async (req, res) => {
 });
 
 app.get('/status', (req, res) => res.send('Service is Up'));
-
-app.listen(8000, () => console.log('Example app listening on port 8080!'));
+const port = process.env.port || 3001;
+app.listen(port, () => console.log('Example app listening on port', port));
