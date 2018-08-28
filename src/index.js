@@ -30,5 +30,5 @@ app.get('/connect/:code', async (req, res) => {
    });
 
 app.get('/status', (req, res) => res.send('Service is Up'));
-const port = process.env.port || 3001
+const port = process.env.port
 app.listen(port, () => console.log('Example app listening on port', port))
