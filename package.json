@@ -1,0 +1,30 @@
+{
+  "name": "gitInsightsServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "express": "^4.16.3",
+    "lint-staged": "^7.2.2",
+    "node-fetch": "^2.2.0",
+    "socket.io": "^2.1.1"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon --exec babel-node -- ./src/index.js",
+
+    "build": "babel src -d dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.3"
+  }
+}
